@@ -48,6 +48,6 @@ Modo de Uso Recomendado
 ![Captura de pantalla 2023-05-18 a la(s) 18 46 59](https://github.com/cesarbobadilla/TiemposListas/assets/35129284/49113000-12eb-4db2-96db-33d107afc098)
 
 
-7 - Después de validar que estamos consumiendo correctamente la api de Python con PHP, procedemos a medir el tiempo de consumo, en el ejemplo adjunto, busco la referencia    43 es decir ?url=43, si deseo otra referencia, podría ser 55, 700, etc. de ese modo ?url=55, ?url=700 y asi. El siguiente comando almacena el resultado en un archivo demol.txt, para posteriormente hacer una comparación de tiempo con el que se genero con el de listas enlazadas.
+7 - Después de validar que estamos consumiendo correctamente la api de Python con PHP, procedemos a medir el tiempo de consumo, en el ejemplo adjunto, busco la referencia    43 es decir ?url=43, si deseo otra referencia, podría ser 55, 700, etc. de ese modo ?url=55, ?url=700 y asi. El siguiente comando almacena el resultado en un archivo demol.txt, para posteriormente hacer una comparación de tiempo con el que se genero con el de listas enlazadas, explicado aquí https://github.com/cesarbobadilla/TiemposListasEnlazadas .
 
     curl -s -w %{time_total}\\n -o /dev/null "http://localhost/?url=43" >> demol.txt
