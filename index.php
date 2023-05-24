@@ -186,7 +186,7 @@
     <?php endif; ?>
 
     <div class="footer">
-      <p><a href="https://github.com/ibnesayeed/linkextractor">Gif Extractor</a> by <a href="https://www.tiktok.com/@cesarbmaqp">TikTok</a> and
+      <p><a href="https://github.com/cesarbobadilla/TiemposListas">Gif Extractor</a> by <a href="https://www.tiktok.com/@cesarbmaqp">TikTok</a> and
         <a href="https://www.youtube.com/@elaficionado5751">Youtube</a><br>
         <a href="https://www.youtube.com/@elaficionado5751">Detalle Explicacion</a>
       </p>
