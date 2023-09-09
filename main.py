@@ -8,12 +8,11 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return "Usage: http://<hostname>[:<prt>]/api/<id>"
+    return "Usage: http://<hostname>[:<prt>]/api"
 
-@app.route("/api/<int:id>")
-def api(id):
-    links = extract_links(50)
-    links = [links[id]]
+@app.route("/api")
+def api():
+    links = extract_links()
     return jsonify(links)
 
 app.run(host="0.0.0.0")

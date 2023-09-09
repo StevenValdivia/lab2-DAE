@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
   ini_set("allow_url_fopen", 1);
-  $api_endpoint = "REEMPLAZE EL DOMINIO/api/";//reemplaze el dominio, por ejemplo http://localhost quedando algo como $api_endpoint = "http://localhost/api/";
+  $api_endpoint = "http://ip172-18-0-40-cjt1988gftqg008csu7g-5000.direct.labs.play-with-docker.com/api";//reemplaze el dominio, por ejemplo http://localhost quedando algo como $api_endpoint = "http://localhost/api/";
   $url = "";
   if(isset($_GET["url"]) && $_GET["url"] != "") {
     $url = $_GET["url"];

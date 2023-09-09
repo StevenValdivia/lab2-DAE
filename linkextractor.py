@@ -3,20 +3,15 @@
 import requests
 import json
 
-def extract_links(lmt=8):
+def extract_links():
     apikey = "LIVDSRZULELA"
     search_term = "excited"
-    r = requests.get("https://g.tenor.com/v1/search?q=%s&key=%s&limit=%s" % (search_term, apikey, lmt))
+    r = requests.get("http://ip172-18-0-32-cjudluksnmng00f2od1g-5200.direct.labs.play-with-docker.com/pizzainfo")
     links = []
-    xx = 0
+    
     if r.status_code == 200:
-        top_8gifs = json.loads(r.content)
-        for x in range (10000):
-            for x in range(len(top_8gifs['results'])):
-                links.append({
-                    "text": top_8gifs['results'][x]['id'],
-                    "href": top_8gifs['results'][x]['media'][0]['webm']['preview']
-            })
+        links = json.loads(r.content)
+   
     return links
 
 if __name__ == "__main__":
